@@ -1,11 +1,17 @@
 div {
     vertical-align: middle;
+    animation-name: Button-Shift;
 }
 
 button {
     padding: 32px 32px;
     height: 60%;
     width: 60%;
+    animation-name: Button-Shift;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: rgb(127, 127, 127);
+    border-width: 0px;
 }
 
 button:hover {
@@ -13,14 +19,7 @@ button:hover {
     vertical-align: middle;
 }
 
-h1 {
-    text-align: center;
-    animation-name: Text-Shift;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-p {
+h1, p {
     text-align: center;
     animation-name: Text-Shift;
     animation-duration: 4s;
@@ -33,139 +32,46 @@ body {
     animation-iteration-count: infinite;
 }
 
+.buttonA {
+    text-align: center;
+    animation-name: Button-Shift;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
 @keyframes Background-Shift {
     0% {
-        background-color: rgb(255, 255, 255)
-    }
-    5% {
-        background-color: rgb(230, 230, 230)
-    }
-    10% {
-        background-color: rgb(205, 205, 205)
-    }
-    15% {
-        background-color: rgb(180, 180, 180)
-    }
-    20% {
-        background-color: rgb(155, 155, 155)
-    }
-    25% {
-        background-color: rgb(130, 130, 130,)
-    }
-    30% {
-        background-color: rgb(105, 105, 105)
-    }
-    35% {
-        background-color: rgb(80, 80, 80)
-    }
-    40% {
-        background-color: rgb(55, 55, 55)
-    }
-    45% {
-        background-color: rgb(30, 30, 30)
+        background-color: black;
     }
     50% {
-        background-color: rgb(5, 5, 5)
-    }
-    55% {
-        background-color: rgb(30, 30, 30)
-    }
-    60% {
-        background-color: rgb(55, 55, 55)
-    }
-    65% {
-        background-color: rgb(80, 80, 80)
-    }
-    70% {
-        background-color: rgb(105, 105, 105)
-    }
-    75% {
-        background-color: rgb(130, 130, 130)
-    }
-    80% {
-        background-color: rgb(155, 155, 155)
-    }
-    85% {
-        background-color: rgb(180, 180, 180)
-    }
-    90% {
-        background-color: rgb(205, 205, 205)
-    }
-    95% {
-        background-color: rgb(230, 230, 230)
+        background-color: white;
     }
     100% {
-        background-color: rgb(255, 255, 255)
+        background-color: black;
     }
 }
 
 @keyframes Text-Shift {
     0% {
-        color: rgb(0, 0, 0);
-    }
-    5% {
-        color: rgb(30, 30, 30);
-    }
-    10% {
-        color: rgb(55, 55, 55);
-    }
-    15% {
-        color: rgb(80, 80, 80);
-    }
-    20% {
-        color: rgb(105, 105, 105);
-    }
-    25% {
-        color: rgb(130, 130, 130,);
-    }
-    30% {
-        color: rgb(155, 155, 155);
-    }
-    35% {
-        color: rgb(180, 180, 180);
-    }
-    40% {
-        color: rgb(205, 205, 205);
-    }
-    45% {
-        color: rgb(230, 230, 230);
+        color: white;
     }
     50% {
-        color: rgb(255, 255, 255);
-    }
-    55% {
-        color: rgb(230, 230, 230);
-    }
-    60% {
-        color: rgb(205, 205, 205);
-    }
-    65% {
-        color: rgb(180, 180, 180);
-    }
-    70% {
-        color: rgb(155, 155, 155);
-    }
-    75% {
-        color: rgb(130, 130, 130);
-    }
-    80% {
-        color: rgb(105, 105, 105);
-    }
-    85% {
-        color: rgb(80, 80, 80);
-    }
-    90% {
-        color: rgb(55, 55, 55);
-    }
-    95% {
-        color: rgb(30, 30, 30);
+        color: black;
     }
     100% {
-        color: rgb(0, 0, 0);
+        color: white;
     }
 }
 
-#buttonA {
-    text-align: center;
+@keyframes Button-Shift {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
 }
 
