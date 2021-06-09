@@ -4,5 +4,4 @@ var buttonCounter = 0;
 buttonPressed.onclick = function(ev) {
     buttonCounter++;
     console.log(buttonCounter);
-    display.innerHTML = "You have clicked " + buttonCounter + " times.";
 };

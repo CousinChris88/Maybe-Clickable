@@ -1,16 +1,23 @@
+div {
+    vertical-align: middle;
+}
+
+button {
+    padding: 32px 32px;
+    height: 60%;
+    width: 60%;
+}
+
+button:hover {
+    padding: 48px 48px;
+    vertical-align: middle;
+}
+
 h1 {
     text-align: center;
     animation-name: Text-Shift;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-}
-
-button {
-    padding: 32px 32px;
-}
-
-button:hover {
-    padding: 48px 48px;
 }
 
 p {
@@ -22,12 +29,6 @@ p {
 
 body {
     animation-name: Background-Shift;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-#Text {
-    animation-name: Text-Shift;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
