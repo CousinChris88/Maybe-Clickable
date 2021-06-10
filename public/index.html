@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="myStyle.css">
 </br>
 <h1 class="Text">Clickable Website!</h1>
-<p> Upon clicking this button, for the next 10 seconds, your clicks will be counted, at the end you will get a notice telling you how many you could do!</p>
-</br></br></br></br>
+<p> Upon clicking the old coloured square, for the next 10 seconds, your clicks will be counted, at the end you will get a notice telling you how many you could do!</p>
+<p>Aim for 65 or Higher for a special reward!</p>
+</br><br>
 <div id="buttonA">
     <button type="button" onclick="countdown()" class="buttonA"></button>
 </div>
@@ -14,8 +15,16 @@
         if (timer == null) {
             timer = setTimeout(function () {
                     alert("Congratulations, you have clicked " + buttonCounter + " Times" + "\r\n" + "That's equal to " + buttonCounter / 10 + " clicks per second!");
+                    if (buttonCounter > 65) {
+                        alert("Wow, now aim for 121 for no greater rewards!");
+                    }
                     if (buttonCounter > highscore) {
                         highscore = buttonCounter;
+                    }
+                    if (buttonCounter > 500) {
+                        for (;;) {
+                            console.log("You Deserved This");
+                        }
                     }
                     document.querySelector("#displayNumber span").innerHTML = highscore;
                 timer = null;
