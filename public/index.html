@@ -3,15 +3,15 @@
 <h1 class="Text">Clickable Website!</h1>
 <p> Upon clicking this button, for the next 10 seconds, your clicks will be counted, at the end you will get a notice telling you how many you could do!</p>
 </br></br></br></br>
-<div class="buttonA">
+<div id="buttonA">
     <button type="button" onclick="countdown()" class="buttonA"></button>
 </div>
 <script>
     var timer = null;
-    function countdown() {
+        function countdown() {
         if (timer == null) {
             timer = setTimeout(function () {
-                alert("Hello, you have clicked " + buttonCounter + " Times");
+                    alert("Congratulations, you have clicked " + buttonCounter + " Times" + "\r\n" + "That's equal to " + buttonCounter / 10 + " clicks per second!");
                 timer = null;
                 buttonCounter = 0;
             }, 10000)

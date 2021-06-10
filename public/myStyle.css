@@ -32,7 +32,11 @@ body {
     animation-iteration-count: infinite;
 }
 
-.buttonA {
+div {
+    width: 100%;
+}
+
+#buttonA {
     text-align: center;
     animation-name: Button-Shift;
     animation-duration: 4s;

@@ -4,4 +4,6 @@ var buttonCounter = 0;
 buttonPressed.onclick = function(ev) {
     buttonCounter++;
     console.log(buttonCounter);
-};
+}
+
+//apachectl restart to open server
