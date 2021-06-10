@@ -8,15 +8,21 @@
 </div>
 <script>
     var timer = null;
+    var highscore = 0;
+    var loserscore = 0;
         function countdown() {
         if (timer == null) {
             timer = setTimeout(function () {
                     alert("Congratulations, you have clicked " + buttonCounter + " Times" + "\r\n" + "That's equal to " + buttonCounter / 10 + " clicks per second!");
+                    if (buttonCounter > highscore) {
+                        highscore = buttonCounter;
+                    }
+                    document.querySelector("#displayNumber span").innerHTML = highscore;
                 timer = null;
                 buttonCounter = 0;
             }, 10000)
         }
     }
 </script>
-<p id="displayNumber" class="Text"></p>
+<p id="displayNumber" class="Text">High Score: <span></span></p>
 <script src="myjs.js"></script>
