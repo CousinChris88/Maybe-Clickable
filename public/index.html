@@ -10,10 +10,9 @@
 <script>
     var timer = null;
     var highscore = 0;
-    var loserscore = 0;
         function countdown() {
         if (timer == null) {
-            timer = setTimeout(function () {
+            timer = setTimeout(function() {
                     alert("Congratulations, you have clicked " + buttonCounter + " Times" + "\r\n" + "That's equal to " + buttonCounter / 10 + " clicks per second!");
                     if (buttonCounter > 65) {
                         alert("Wow, now aim for 121 for no greater rewards!");
