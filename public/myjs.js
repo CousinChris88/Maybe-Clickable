@@ -5,5 +5,6 @@ buttonPressed.onclick = function(ev) {
     buttonCounter++;
     console.log(buttonCounter);
 }
-
+highscore = localStorage.getItem("localscore");
+document.querySelector("#displayNumber span").innerHTML = highscore;
 //apachectl restart to open server
